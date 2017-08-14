@@ -68,7 +68,6 @@ def setSrr(url):
                 l.append(st)
         setDoc(l)
 
-# 穿入字符串 写入文件；标题为l[0]
 def setDoc(l):
     if l == err:
         print(l)
