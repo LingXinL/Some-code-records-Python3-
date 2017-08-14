@@ -8,18 +8,8 @@ from concurrent.futures import  ThreadPoolExecutor
 
 #章节TXT文件不存在，请检查！
 '''''全局变量声明， 下载其它小说请注意修改 [下载到的本地目录, 书号, 起始index号]'''
-downLoadFile = '/root/txt_cpxs/'   ## 书号就是http://www.biquge.com/2_2970/2456497.html; com后面的那个。
+downLoadFile = '/root/txt_cpxs/'  
 err = '﻿  章节TXT文件不存在，请检查！'
-
-
-# strings.split()
-
-
-
-        # 开始自加数值；读取新文档；如果没有；那么跳过
-
-
-''''''' 最开始设置为1066142，100  '''
 
 
 
@@ -27,17 +17,13 @@ err = '﻿  章节TXT文件不存在，请检查！'
 
 '''''''自动产生新的url'''
 
-#'''''''  自己观察到： 第一章的地址http://www.biquge.com/2_2970/2456497.html
-#最后一张的地址
-#http: // www.biquge.com / 2_2970 / 3230837.
-#html
 
 def setNewUrl():
     urls = []
     for first in range(19, 20):
         for second in range(18001, 20912):
             for x in range(1305990, 1400000):
-                xsr = 'http://m.zhanzhekan.com/'+ str(first) + '_' + str(second) +'/'+ str(x) +'.html'  #对应的单章html
+                xsr = 'http://www.******.com/'+ str(first) + '_' + str(second) +'/'+ str(x) +'.html'  #对应的单章html
                 urls.append(xsr)
             return urls
 
